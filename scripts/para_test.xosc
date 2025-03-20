@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<OpenSCENARIO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OpenScenario.xsd">
+    <FileHeader description="test" author="hcis" revMajor="1" revMinor="2" date="2025-01-17T04:39:03.816771"/>
+    <ParameterValueDistribution>
+        <ScenarioFile filepath="/home/hcis-s19/Documents/ChengYu/esmini-demo/scripts/para_test.xosc"/>
+        <Deterministic>
+            <DeterministicSingleParameterDistribution parameterName="Agent1_1_TA_DynamicDuration">
+                <DistributionRange stepWidth="2">
+                    <Range lowerLimit="5.0" upperLimit="5.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+            <DeterministicSingleParameterDistribution parameterName="Agent1_Speed">
+                <DistributionRange stepWidth="10">
+                    <Range lowerLimit="40.0" upperLimit="60.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+            <DeterministicSingleParameterDistribution parameterName="Agent1_1_SA_EndSpeed">
+                <DistributionRange stepWidth="10">
+                    <Range lowerLimit="40.0" upperLimit="60.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+            <DeterministicSingleParameterDistribution parameterName="Agent1_1_SA_DynamicDuration">
+                <DistributionRange stepWidth="2">
+                    <Range lowerLimit="5.0" upperLimit="5.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+            <DeterministicSingleParameterDistribution parameterName="Agent2_1_TA_DynamicDuration">
+                <DistributionRange stepWidth="2">
+                    <Range lowerLimit="5.0" upperLimit="5.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+            <DeterministicSingleParameterDistribution parameterName="Agent2_Speed">
+                <DistributionRange stepWidth="10">
+                    <Range lowerLimit="40.0" upperLimit="60.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+            <DeterministicSingleParameterDistribution parameterName="Agent2_1_SA_EndSpeed">
+                <DistributionRange stepWidth="10">
+                    <Range lowerLimit="0.0" upperLimit="0.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+            <DeterministicSingleParameterDistribution parameterName="Agent2_1_SA_DynamicDuration">
+                <DistributionRange stepWidth="2">
+                    <Range lowerLimit="0.5" upperLimit="2.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+        </Deterministic>
+    </ParameterValueDistribution>
+</OpenSCENARIO>

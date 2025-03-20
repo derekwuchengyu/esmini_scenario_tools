@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSCENARIO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OpenScenario.xsd">
+    <FileHeader description="test" author="hcis" revMajor="1" revMinor="2" date="2024-12-27T18:51:16.836435"/>
+    <ParameterValueDistribution>
+        <ScenarioFile filepath="para_test.xosc"/>
+        <Deterministic>
+            <DeterministicSingleParameterDistribution parameterName="Agent1_S">
+                <DistributionRange stepWidth="10">
+                    <Range lowerLimit="45.0" upperLimit="45.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+            <DeterministicSingleParameterDistribution parameterName="Agent1_1_SA_EndSpeed">
+                <DistributionRange stepWidth="10">
+                    <Range lowerLimit="0.0" upperLimit="60.0"/>
+                </DistributionRange>
+            </DeterministicSingleParameterDistribution>
+        </Deterministic>
+    </ParameterValueDistribution>
+</OpenSCENARIO>

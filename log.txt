@@ -1,0 +1,10 @@
+esmini GIT REV: N/A
+esmini GIT TAG: N/A
+esmini GIT BRANCH: N/A
+esmini BUILD VERSION: N/A - client build
+playerbase.cpp / 1504 / Init(): Run simulation decoupled from realtime, with fixed timestep: 0.05
+playerbase.cpp / 1542 / Init(): Generated seed 1446601911
+ScenarioEngine.cpp / 543 / parseScenario(): Loading resources/xosc/built_from_conf/0103/ZAM_Zip-1_14_I-1-1.xosc (v1.0)
+Parameters.cpp / 573 / Print(): 0 variables
+ScenarioEngine.cpp / 585 / parseScenario(): Loaded OpenDRIVE: /home/hcis-s19/Documents/ChengYu/esmini-demo/resources/xosc/built_from_conf/0103/ZAM_Zip-1_14_I-1.xodr
+playerbase.cpp / 1600 / Init(): Exception: stof
