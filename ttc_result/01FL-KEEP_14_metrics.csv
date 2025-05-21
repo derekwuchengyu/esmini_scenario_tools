@@ -1,0 +1,4 @@
+min_ttc,Agent1_S,Agent1_Speed,Agent1_1_SA_EndSpeed,Agent1_1_TA_DynamicDuration,Agent1_1_SA_DynamicDuration,Ego_Speed
+0.13501754476443467,65.0,40.0,0.0,5.0,0.5,40.0
+0.13524980701431313,65.0,50.0,0.0,5.0,0.5,40.0
+0.13705939690123622,65.0,60.0,0.0,5.0,0.5,40.0

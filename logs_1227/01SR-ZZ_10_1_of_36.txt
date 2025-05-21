@@ -1,0 +1,14 @@
+esmini GIT REV: N/A
+esmini GIT TAG: N/A
+esmini GIT BRANCH: N/A
+esmini BUILD VERSION: N/A - client build
+playerbase.cpp / 1476 / Init(): Using parameter distribution file: /home/hcis-s19/Documents/ChengYu/esmini-demo/scripts/para_test.xosc
+playerbase.cpp / 1504 / Init(): Run simulation decoupled from realtime, with fixed timestep: 0.05
+playerbase.cpp / 1530 / Init(): Disable entity controllers
+playerbase.cpp / 1542 / Init(): Generated seed 3218601776
+ScenarioReader.cpp / 147 / loadOSCFile(): Parameter permutation 1/36
+ScenarioReader.cpp / 158 / loadOSCFile():    Agent1_S: 0.000000
+ScenarioReader.cpp / 164 / loadOSCFile(): Distribution parameter Agent1_1_TA_DynamicDuration not found in /home/hcis-s19/Documents/ChengYu/esmini-demo/resources/xosc/built_from_conf/1227/01SR-ZZ_10.xosc
+ScenarioEngine.cpp / 84 / InitScenario(): Failed to load OpenSCENARIO file 01SR-ZZ_10.xosc
+0.000 esminiLib.cpp / 429 / InitScenario(): Failed to initialize scenario player
+ScenarioEngine.cpp / 126 / ~ScenarioEngine(): Closing

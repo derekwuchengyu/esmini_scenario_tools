@@ -1,0 +1,10 @@
+permutation,Agent1_1_SA_EndSpeed,Agent1_1_SA_DynamicDuration,Agent1_1_SA_DynamicShape,Agent1_1_SA_DynamicDelay,Agent1_1_TA_Times,Agent1_1_TA_Period,Agent1_1_TA_Offset,Agent1_1_Delay,Agent1_S,Agent1_Speed,Agent1_Type,Ego_S,Ego_Speed,Ego_Vehicle
+01SR-ZZ_9_8_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,0.6,1.5,0.0,50.0,60.0,bicycle,40.0,40.0,car_white
+01SR-ZZ_9_2_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,0.6,1.5,0.0,50.0,40.0,bicycle,40.0,40.0,car_white
+01SR-ZZ_9_4_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,0.2,1.5,0.0,50.0,50.0,bicycle,40.0,40.0,car_white
+01SR-ZZ_9_6_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,1.0,1.5,0.0,50.0,50.0,bicycle,40.0,40.0,car_white
+01SR-ZZ_9_7_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,0.2,1.5,0.0,50.0,60.0,bicycle,40.0,40.0,car_white
+01SR-ZZ_9_9_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,1.0,1.5,0.0,50.0,60.0,bicycle,40.0,40.0,car_white
+01SR-ZZ_9_3_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,1.0,1.5,0.0,50.0,40.0,bicycle,40.0,40.0,car_white
+01SR-ZZ_9_1_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,0.2,1.5,0.0,50.0,40.0,bicycle,40.0,40.0,car_white
+01SR-ZZ_9_5_of_9.txt,0.0,0.5,sinusoidal,1.0,3.0,0.6,1.5,0.0,50.0,50.0,bicycle,40.0,40.0,car_white

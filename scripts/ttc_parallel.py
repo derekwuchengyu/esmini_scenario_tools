@@ -150,11 +150,11 @@ def update_csv_param_range_all(scenario_name, metrics_folder, config_folder):
     metrics_file = f"{scenario_name}_metrics.csv"
     metrics_csv = os.path.join(metrics_folder, metrics_file)
         
-    try:
+    if 1:
         data = pd.read_csv(metrics_csv)
-    except:
-        print(f"File not found: {metrics_csv}")
-        return
+    # else:
+        # print(f"File not found: {metrics_csv}")
+        # return
     
     # 計算最大最小值
     filtered_data = data[data['min_ttc'] < TTC_THRESHOLD]

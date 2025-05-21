@@ -1,6 +1,6 @@
 esmini_path="/home/hcis-s19/Documents/ChengYu/esmini-demo"
 param_dist=$esmini_path"/scripts/para_test.xosc"
-test_xosc_folder=$esmini_path"/resources/xosc/built_from_conf/0115" #single scenario
+test_xosc_folder=$esmini_path"/resources/xosc/built_from_conf/0516" #single scenario
 # test_xosc_folder=$esmini_path"/resources/xosc/built_from_conf/0105" #combined scenario
 
 
@@ -28,30 +28,33 @@ filter='^[^_]+_[^_]+_[^_]+\.xosc$'
 total_files=$(ls $test_xosc_folder | grep -E $filter | wc -l)
 current_file=1
 
+# 跑esmini, 紀錄log, 計算TTC, 更新csv
 # for file in $(ls $test_xosc_folder | grep -E '^[^_]+_[^_]+_[^_]+\.xosc$'); do
 for file in $(ls $test_xosc_folder | grep -E $filter); do
     file="$test_xosc_folder/$file"
     scenario_name=$(basename "$file" .xosc)
     echo "Processing file: $file ($current_file/$total_files)"
     # echo "Processing scenario_name: $scenario_name"
-    python scripts/paragen.py --osc "$file" --display_param 0 --config_folder "$config_folder"
-    python scripts/run_distribution.py \
-        --osc "$file" \
-        --param_dist "$param_dist" \
-        --logfile_path "${log_folder}/${scenario_name}.txt" \
-        --record "${dat_folder}/${scenario_name}.dat" \
-        --fixed_timestep 0.1 \
-        --headless \
-        --disable_controllers \
-    && \
-    python scripts/log2csv_batch.py \
-        --scenario "${scenario_name}" \
-        --log_folder "${log_folder}"
+    # 產生測試parameter samples, 並run esmini
+    # python scripts/paragen.py --osc "$file" --display_param 0 --config_folder "$config_folder"
+    # python scripts/run_distribution.py \
+    #     --osc "$file" \
+    #     --param_dist "$param_dist" \
+    #     --logfile_path "${log_folder}/${scenario_name}.txt" \
+    #     --record "${dat_folder}/${scenario_name}.dat" \
+    #     --fixed_timestep 0.1 \
+    #     --headless \
+    #     --disable_controllers \
+    # && \
+    # python scripts/log2csv_batch.py \
+    #     --scenario "${scenario_name}" \
+    #     --log_folder "${log_folder}"
 
-    python scripts/dat2csv_batch.py \
-        --scenario  "${scenario_name}" \
-        --dat_folder "${dat_folder}"
+    # python scripts/dat2csv_batch.py \
+    #     --scenario  "${scenario_name}" \
+    #     --dat_folder "${dat_folder}"
 
+    #  紀錄計算每個時刻的TTC、存成CSV, 回頭更新scenario CSV
     python scripts/ttc_parallel.py \
         --scenario  "${scenario_name}" \
         --dat_folder "${dat_folder}" \

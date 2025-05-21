@@ -1,0 +1,85 @@
+esmini GIT REV: N/A
+esmini GIT TAG: N/A
+esmini GIT BRANCH: N/A
+esmini BUILD VERSION: 3923
+No fixed timestep specified - running in realtime speed
+Generated seed 1639379312
+Loading ../../resources/xosc/./left-hand-traffic_by_heading.xosc (v1.0)
+0 variables
+Unsupported geo reference attr: +no_defs
+Unsupported object type: rail-pole - interpret as NONE
+Unsupported object type: rail-pole - interpret as NONE
+Unsupported object type: guide-post - interpret as NONE
+Unsupported object type: guide-post - interpret as NONE
+Loaded OpenDRIVE: ../../resources/xosc/./../xodr/e6mini.xodr
+Catalog RouteCatalog sub element Directory not found - skipping
+Expr ${250/3.6} = 250/3.6 = 69.4444444444
+Dynamics dimension missing - fall back to TIME
+3 parameters:
+   EgoStartS = 40
+   TargetVehicle = car_red
+   HostVehicle = car_white
+0.000: Loaded scenegraph: ../../resources/xosc/../models/e6mini.osgb
+0.000: Object ../models/railing-pole.osgb missing length, set to bounding box length 0.10
+0.000: Object ../models/railing-pole.osgb missing width, set to bounding box width 0.10
+0.000: Object ../models/railing-pole.osgb missing height, set to bounding box height 1.00
+0.000: Object ../models/railing-pole.osgb missing length, set to bounding box length 0.10
+0.000: Object ../models/railing-pole.osgb missing width, set to bounding box width 0.10
+0.000: Object ../models/railing-pole.osgb missing height, set to bounding box height 1.00
+0.000: Object ../models/railing.osgb missing length, set to bounding box length 4.00
+0.000: Object ../models/railing.osgb missing width, set to bounding box width 0.10
+0.000: Object ../models/railing.osgb missing height, set to bounding box height 0.20
+0.000: Object ../models/railing.osgb missing length, set to bounding box length 4.00
+0.000: Object ../models/railing.osgb missing width, set to bounding box width 0.10
+0.000: Object ../models/railing.osgb missing height, set to bounding box height 0.20
+0.000: Object ../models/guide-post.osgb missing length, set to bounding box length 0.08
+0.000: Object ../models/guide-post.osgb missing width, set to bounding box width 0.13
+0.000: Object ../models/guide-post.osgb missing height, set to bounding box height 1.25
+0.000: Object ../models/guide-post.osgb missing length, set to bounding box length 0.08
+0.000: Object ../models/guide-post.osgb missing width, set to bounding box width 0.13
+0.000: Object ../models/guide-post.osgb missing height, set to bounding box height 1.25
+0.000: Adjusted OverTaker bounding box to model car_red.osgb - xyz: 1.46, 0.00, 0.77 lwh: 5.04, 2.04, 1.49
+0.000: Init Ego LongitudinalAction initState -> startTransition -> runningState
+0.000: Init Ego TeleportAction initState -> startTransition -> runningState
+0.000: Starting teleport Action
+0.000: Ego New position:
+0.000: Pos(-7.86, 40.03, -0.03) Rot(1.57, 0.00, 6.28) roadId 0 laneId 3 offset 0.00 t 8.00
+0.000: Init OverTaker LongitudinalAction initState -> startTransition -> runningState
+0.000: Init OverTaker TeleportAction initState -> startTransition -> runningState
+0.000: Starting teleport Action
+0.000: OverTaker New position:
+0.000: Pos(-4.39, 10.01, -0.00) Rot(1.57, 0.00, 0.00) roadId 0 laneId 2 offset 0.00 t 4.42
+0.000: storyBoard initState -> startTransition -> runningState
+0.000: StoryPlaceholder initState -> startTransition -> runningState
+0.000: Lane change initState -> initToStandbyTransition -> standbyState
+0.000: Init Ego LongitudinalAction runningState -> endTransition -> completeState
+0.000: Init Ego TeleportAction runningState -> endTransition -> completeState
+0.000: Init OverTaker TeleportAction runningState -> endTransition -> completeState
+0.001: Trigger /------------------------------------------------
+0.001: CutInActStart == true, 0.0010 > 0.0000 edge: risingOrFalling
+0.001: Trigger  ------------------------------------------------/
+0.001: Lane change standbyState -> startTransition -> runningState
+0.001: Lane change initState -> startTransition -> runningState
+0.001: Lane change initState -> startTransition -> runningState
+0.001: Lane change initState -> initToStandbyTransition -> standbyState
+3.758: Trigger /------------------------------------------------
+3.758: Lane change == true, rel_dist: 10.12 > 10.00, edge: rising
+3.758: Triggering entity 0: Ego
+3.758: Trigger  ------------------------------------------------/
+3.758: Lane change standbyState -> startTransition -> runningState
+3.758: Lane change initState -> startTransition -> runningState
+5.754: Lane change runningState -> endTransition -> completeState
+5.754: Lane change complete after 1 execution
+5.754: Lane change runningState -> endTransition -> completeState
+5.754: Lane change runningState -> endTransition -> completeState
+5.754: Lane change complete after 1 execution
+5.754: Lane change runningState -> endTransition -> completeState
+5.754: Lane change runningState -> endTransition -> completeState
+5.754: StoryPlaceholder runningState -> endTransition -> completeState
+5.766: QuitCondition timer 4.00s started
+9.767: QuitCondition timer expired at 4.00 seconds
+9.767: Trigger /------------------------------------------------
+9.767: QuitCondition == true, element: Lane change state: END_TRANSITION, edge: rising
+9.767: Trigger  ------------------------------------------------/
+9.767: storyBoard runningState -> stopTransition -> completeState
+Closing
